@@ -78,13 +78,13 @@ def graph_general(fecha1,timedelta,data, ylim, area = None):
     if ylim[3] != None:
         ax[1][1].set_ylim(ylim[3][0], ylim[3][1])
 
-    ax[2][0].plot(sale2, label="out")
+    ax[2][0].plot(sale2,"b.", label="out")
     ax[2][0].plot(entra2, label="in")
     formato(ax[2][0], label_entra)
     if ylim[4] != None:
         ax[2][0].set_ylim(ylim[4][0], ylim[4][1])
 
-    ax[2][1].plot(sale1, label="out")
+    ax[2][1].plot(sale1,"b.", label="out")
     ax[2][1].plot(entra1, label="in")
     formato(ax[2][1], label_sale)
     if ylim[5] != None:
